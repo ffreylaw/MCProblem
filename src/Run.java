@@ -38,12 +38,12 @@ public class Run {
 			
 			Iterator<Node> iterator = current_node.getChildNodes().listIterator();
 			while (iterator.hasNext()) {
-                Node node = iterator.next();
-                if (!isVisited(node.getState())) {
-                    visited.add(node.getState());
-                    queue.add(node);
-                }
-            }
+				Node node = iterator.next();
+				if (!isVisited(node.getState())) {
+					visited.add(node.getState());
+					queue.add(node);
+				}
+			}
 			System.out.println("");
 		}
 	}
