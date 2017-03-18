@@ -1,13 +1,13 @@
 import java.util.Iterator;
 import java.util.LinkedList;
 
-public class Run {
+public class Prog {
 	
 	private Graph graph;
 	private LinkedList<State> visited;
 	private State goalState;
 	
-	public Run() {
+	public Prog() {
 		State initState = new State(3, 3, 0, 0, true);
 		Node rootNode = new Node(initState);
 		graph = new Graph(rootNode);
