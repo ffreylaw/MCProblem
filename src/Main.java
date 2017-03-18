@@ -5,7 +5,9 @@ public class Main {
 	
 	private Graph graph;
 	private LinkedList<State> visited;
-	private State goalState;
+	
+	private final State initialState = new State(3, 3, 0, 0, true);
+	private final State goalState = new State(0, 0, 3, 3, false);
 	
 	public static void main(String[] args) {
 		Main prog = new Main();
@@ -13,11 +15,9 @@ public class Main {
 	}
 	
 	public Main() {
-		State initState = new State(3, 3, 0, 0, true);
-		Node rootNode = new Node(initState);
+		Node rootNode = new Node(initialState);
 		graph = new Graph(rootNode);
 		visited = new LinkedList<State>();
-		goalState = new State(0, 0, 3, 3, false);
 	}
 	
 	public void run() {
