@@ -28,7 +28,7 @@ public class Run {
 		
 		while (!queue.isEmpty()) {
 			current_node = queue.poll();
-			System.out.println("visit: "+current_node);
+			System.out.println("visit: " + current_node.getState());
 			if (current_node.getState().compare(goalState)) {
 				System.out.println("done!");
 				break;
@@ -56,7 +56,7 @@ public class Run {
 				if (isValidState(state)) {
 					Node n = new Node(state);
 					node.addChild(n);
-					System.out.println("add: "+n);
+					System.out.println("add: " + n.getState());
 				}
 			}
 			if (s.getCLeft() - 1 >= 0) {
@@ -64,7 +64,7 @@ public class Run {
 				if (isValidState(state)) {
 					Node n = new Node(state);
 					node.addChild(n);
-					System.out.println("add: "+n);
+					System.out.println("add: " + n.getState());
 				}
 			}
 			if (s.getMLeft() - 1 >= 0 && s.getCLeft() - 1 >= 0) {
@@ -72,7 +72,7 @@ public class Run {
 				if (isValidState(state)) {
 					Node n = new Node(state);
 					node.addChild(n);
-					System.out.println("add: "+n);
+					System.out.println("add: " + n.getState());
 				}
 			}
 			if (s.getMLeft() - 2 >= 0) {
@@ -80,7 +80,7 @@ public class Run {
 				if (isValidState(state)) {
 					Node n = new Node(state);
 					node.addChild(n);
-					System.out.println("add: "+n);
+					System.out.println("add: " + n.getState());
 				}
 			}
 			if (s.getCLeft() - 2 >= 0) {
@@ -88,7 +88,7 @@ public class Run {
 				if (isValidState(state)) {
 					Node n = new Node(state);
 					node.addChild(n);
-					System.out.println("add: "+n);
+					System.out.println("add: " + n.getState());
 				}
 			}
 		} else {
@@ -97,7 +97,7 @@ public class Run {
 				if (isValidState(state)) {
 					Node n = new Node(state);
 					node.addChild(n);
-					System.out.println("add: "+n);
+					System.out.println("add: " + n.getState());
 				}
 			}
 			if (s.getCRght() - 1 >= 0) {
@@ -105,7 +105,7 @@ public class Run {
 				if (isValidState(state)) {
 					Node n = new Node(state);
 					node.addChild(n);
-					System.out.println("add: "+n);
+					System.out.println("add: " + n.getState());
 				}
 			}
 			if (s.getMRght() - 1 >= 0 && s.getCRght() - 1 >= 0) {
@@ -113,7 +113,7 @@ public class Run {
 				if (isValidState(state)) {
 					Node n = new Node(state);
 					node.addChild(n);
-					System.out.println("add: "+n);
+					System.out.println("add: " + n.getState());
 				}
 			}
 			if (s.getMRght() - 2 >= 0) {
@@ -121,7 +121,7 @@ public class Run {
 				if (isValidState(state)) {
 					Node n = new Node(state);
 					node.addChild(n);
-					System.out.println("add: "+n);
+					System.out.println("add: " + n.getState());
 				}
 			}
 			if (s.getCRght() - 2 >= 0) {
@@ -129,7 +129,7 @@ public class Run {
 				if (isValidState(state)) {
 					Node n = new Node(state);
 					node.addChild(n);
-					System.out.println("add: "+n);
+					System.out.println("add: " + n.getState());
 				}
 			}
 		}

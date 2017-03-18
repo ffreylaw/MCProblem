@@ -21,10 +21,5 @@ public class Node {
 	public LinkedList<Node> getChildNodes() {
 		return childNodes;
 	}
-	
-	@Override
-	public String toString() {
-		return state.toString();
-	}
 
 }
